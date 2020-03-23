@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/pigzbe/react-native-stellar-sdk"
   },
-  "main": "stellar-sdk.js",
+  "main": "stellar-base.js",
   "scripts": {
     "build": "webpack",
     "test": "jest",
@@ -16,6 +16,7 @@
     "publish": "npm publish --access public"
   },
   "dependencies": {
+    "eventsource": "^1.0.7",
     "react-native-randombytes": "3.5.2"
   },
   "devDependencies": {
@@ -27,8 +28,8 @@
     "react-native": "0.58.5",
     "standard": "^12.0.1",
     "stellar-base": "2.1.6",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "webpack": "4.42.0",
+    "webpack-cli": "3.3.11"
   },
   "jest": {
     "preset": "react-native",
@@ -50,7 +51,7 @@
       "afterEach"
     ],
     "ignore": [
-      "stellar-sdk.js"
+      "stellar-base.js"
     ]
   }
 }
